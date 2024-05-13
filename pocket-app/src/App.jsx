@@ -1,12 +1,12 @@
-import React from "react"
-import Chat from "./components/Chat"
+import React from "react";
+import Pocket from "./components/Pocket.jsx";
 
 function App() {
 
   return (
   
       <div>
-        <Chat/>
+        <Pocket/>
       </div>
      
   )
