@@ -280,7 +280,7 @@ function MobileView() {
                                             letterSpacing: '0.02em',
                                             textAlign: 'left',
                                             color: '#000000'
-                                        }}>{formattedDateTime}</span>
+                                        }}>{formatDateTimeIST(new Date(note.timestamp))}</span>
                                     </div>
                                 ))}
                             </div>
