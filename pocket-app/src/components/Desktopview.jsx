@@ -222,7 +222,7 @@ function DesktopView() {
                                     {Array.isArray(groupList[activeGroup]?.notes) && groupList[activeGroup].notes.map((note, index) => (
                                         <div key={index} style={{ width: '997px', height: '210px', borderRadius: '5px', marginTop: '20px', backgroundColor: '#FFFFFF', boxShadow: '0px 4px 20px 0px #00000040', padding: '20px', color: '#000000', position: 'relative' }}>
                                             <span style={{ fontFamily: 'Roboto,sans-serif', fontSize: '18px', fontWeight: '400', lineHeight: '28.83px', letterSpacing: '0.035em', textAlign: 'left', color: '#000000' }}>{note.content}</span>
-                                            <span style={{ position: 'absolute', bottom: '10px', left: '870px', width: '300px', height: '18px', fontFamily: 'Roboto,sans-serif', fontSize: '14px', fontWeight: '500', lineHeight: '18px', letterSpacing: '0.02em', textAlign: 'left', color: '#000000' }}>{formattedDateTime}</span>
+                                            <span style={{ position: 'absolute', bottom: '10px', left: '870px', width: '300px', height: '18px', fontFamily: 'Roboto,sans-serif', fontSize: '14px', fontWeight: '500', lineHeight: '18px', letterSpacing: '0.02em', textAlign: 'left', color: '#000000' }}>{formatDateTimeIST(new Date(note.timestamp))}</span>
                                         </div>
                                     ))}
                                 </div>
